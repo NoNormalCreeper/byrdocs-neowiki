@@ -6,6 +6,13 @@
 
 我们非常欢迎你为维基真题贡献自己的一份力量！
 
+## 许可证
+
+本项目采用双许可证：
+
+- `exams/` 目录下的试卷内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 授权。
+- 其余代码采用 [MIT](./LICENSE) 授权。
+
 ## 如何贡献
 
 1. [Fork 本仓库](https://github.com/byrdocs/byrdocs-neowiki/fork) 到你自己的 GitHub 账号下。
