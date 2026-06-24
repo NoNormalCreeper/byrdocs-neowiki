@@ -91,9 +91,14 @@ function formatTime(timestamp: number): string {
             <li class="flex items-center justify-between gap-4 px-6 py-4">
               <a
                 href={`/exam/${exam.id}`}
-                class="text-slate-900 no-underline transition hover:text-sky-600 dark:text-slate-100 dark:hover:text-sky-400"
+                class="flex items-center gap-2 text-slate-900 no-underline transition hover:text-sky-600 dark:text-slate-100 dark:hover:text-sky-400"
               >
                 {exam.id}
+                {exam.uncommitted && (
+                  <span class="shrink-0 rounded-md bg-yellow-100 px-1.5 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300">
+                    uncommitted
+                  </span>
+                )}
               </a>
               <time
                 class="shrink-0 text-sm text-slate-500 dark:text-slate-400"
