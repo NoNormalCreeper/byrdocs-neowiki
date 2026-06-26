@@ -19,15 +19,16 @@
     + $0.625$
 </Choices>
 
-2. (待确认) 设事件 $A,B,C$ 满足 $P(A-C)=0.3,\ P(A)=0.7, P(AB)=0.4,\ A\supset C,\ B\supset C$。求 $P(AB-C)$。
+2. （具体数据待确认） 设事件 $A,B,C$ 满足 $P(A-C)=0.4,\ P(A)=0.7, P(AB)=0.4,\ A\supset C,\ B\supset C$。求 $P(AB-C)$。
 
 <Choices>
+    + $0.1$
 </Choices>
 
 3. 设随机变量 $X\sim \pi(5)$，$Y\sim B\left(16,\frac12\right)$，且 $X,Y$ 相互独立。若 $D(2X-Y+1)=C$，求 $C$。
 
 <Choices>
-    - $24$
+    + $24$
 </Choices>
 
 4. 设二维随机变量 $(X,Y)$ 服从二维正态分布 $N(\mu_1,\mu_2;\sigma_1,\sigma_2;\rho)$。若 $X$ 与 $Y$ 相互独立，则 $\rho=$<Slot />。
@@ -43,15 +44,18 @@
 
 <Choices>
     + $0.2$
+    - $0.4$
+    - $0.6$
+    - $0.8$
 </Choices>
 
-6. 设随机变量 $X,Y$ 相互独立，分布函数分别为 $F_X(x)$ 与 $F_Y(x)$。求随机变量 $\min\{X,Y\}$ 的分布函数。
+6. 设随机变量 $X,Y$ 独立同分布，分布函数分别为 $F_X(x)$ 与 $F_Y(x)$。求随机变量 $\min\{X,Y\}$ 的分布函数 $F(x)$。
 
 <Choices>
     - $F_X(x)+F_Y(x)$
     - $F_X(x)F_Y(x)$
     + $1-[1-F_X(x)]^2$
-    - $1-[1-F_X(x)][1-F_Y(x)]$
+    - $1-[1-F_X(x)][1-F_Y(y)]$
 </Choices>
 
 7. 设科学实验中每个测量值都按四舍五入保留 $k$ 位小数。若第 $i$ 次测量的精确值为 $x_i$，四舍五入后的记录值为 $X_i$，则第 $i$ 次测量产生的舍入误差为 $\varepsilon_i=X_i-x_i$，并假设
@@ -63,22 +67,20 @@ U\left(-\frac12\cdot 10^{-k},\frac12\cdot 10^{-k}\right).
 $$
 
 利用中心极限定理，近似求总舍入误差
-
-$$
+$
 S_n=\sum_{i=1}^n\varepsilon_i
-$$
-
+$
 所服从的分布。
 
 <Choices>
-    + $N\left(0,\frac{n}{12}10^{-2k}\right)$
+    + $\displaystyle N\left(0,\frac{n}{12}10^{-2k}\right)$
 </Choices>
 
-8. 设 $X_1,X_2,\ldots,X_5$ 是来自同一总体的简单随机样本，且 $E(X_i)=\alpha,\ D(X_i)=\beta$。求 $D(\overline X)$。
+8. 设 $X_1,X_2,\ldots,X_5$ 是来自同一总体的简单随机样本，且 $E(X_1)=\alpha,\ D(X_1)=\beta$。求 $D(\overline X)$。
 
 <Choices>
     - $\alpha+\beta$
-    - $0.2\beta$
+    + $0.2\beta$
     - $\beta$
     - $5\beta$
 </Choices>
@@ -94,10 +96,9 @@ $$
 判断下列说法中正确的是哪一项。
 
 <Choices>
-    - $\frac{\overline X-\mu}{\sigma/\sqrt n}\sim t(n-1)$
-    - $\frac{\overline X-\mu}{S/\sqrt n}\sim t(n-1)$
-    - $\frac{(n-1)S^2}{\sigma^2}\sim \chi^2(n-1)$
-    - $\frac{nS^2}{\sigma^2}\sim \chi^2(n)$
+    - $\displaystyle \frac{\overline X-\mu}{\sigma/\sqrt n}\sim t(n-1)$
+    + $\displaystyle \frac{\overline X-\mu}{S/\sqrt n}\sim t(n-1)$
+    - $\displaystyle \frac{S^2}{\sigma^2}\sim \chi^2(n-1)$
 </Choices>
 
 10. 为测评手机的某项指标，取 $n$ 个样本。设
@@ -107,10 +108,13 @@ X_1,\ldots,X_n\sim N(\mu_1,\sigma^2),\quad
 Y_1,\ldots,Y_n\sim N(\mu_2,\sigma^2),
 $$
 
-两样本相互独立，且总体方差相同。由样本得到 $\overline X,\overline Y,S^2$。求 $\mu_1-\mu_2$ 置信水平为 $0.95$ 的置信区间。
+两样本相互独立，且总体方差相同。由样本得到 $\overline X,\overline Y$，两个样本方差均为 $S^2$。求 $\mu_1-\mu_2$ 置信水平为 $0.95$ 的置信区间。
 
 <Choices>
     + $\left(\overline X-\overline Y-t_{0.025}(2n-2)\frac{\sqrt2S}{\sqrt n},\ \overline X-\overline Y+t_{0.025}(2n-2)\frac{\sqrt2S}{\sqrt n}\right)$
+    - $\left(\overline X-\overline Y-t_{0.025}(2n-2)\frac{S}{\sqrt n},\ \overline X-\overline Y+t_{0.025}(2n-2)\frac{S}{\sqrt n}\right)$
+    - $\left(\overline X-\overline Y-t_{0.05}(2n-2)\frac{\sqrt2S}{\sqrt n},\ \overline X-\overline Y+t_{0.05}(2n-2)\frac{\sqrt2S}{\sqrt n}\right)$
+    - $\left(\overline X-\overline Y-t_{0.05}(2n-2)\frac{S}{\sqrt n},\ \overline X-\overline Y+t_{0.05}(2n-2)\frac{S}{\sqrt n}\right)$
 </Choices>
 
 ## 二、计算题
@@ -120,7 +124,7 @@ $$
 $$
 f(x)=
 \begin{cases}
-c\left(1-\frac{x}{10}\right),&0<x<10,\\
+\displaystyle c\left(1-\frac{x}{10}\right),&0<x<10,\\
 0,&\text{其他}.
 \end{cases}
 $$
@@ -153,7 +157,7 @@ $$
 且 $P\{XY=1\}=0$。
 
 1. 求 $(X,Y)$ 的联合分布律；
-2. 求 $P\{\max(X,Y)=1\}$；
+2. 求 $P\{\max\{ X,Y \} =1\}$；
 3. 求 $Y=1$ 条件下 $X$ 的条件分布律；
 4. 判断 $X$ 和 $Y$ 是否相互独立，并说明理由。
 
@@ -181,13 +185,30 @@ $$
 
 ## 七、计算题
 
-某冰淇淋店统计了天气与冰淇淋销售量的关系，共有 10 组数据。已知
+某冰淇淋店统计了气温与冰淇淋销售量的关系，共有 10 组数据如下。
+
+这些数据计算出
 
 $$
-\sum_{i=1}^{10}x_i=110.
+\newcommand{\cell}[1]{\vcenter{\hbox{\rule[-1.6em]{0pt}{4.0em}$\displaystyle #1$}}}
+\begin{array}{|l|l|l|}
+\hline
+\cell{\sum_{i=1}^{10} x_i=110}
+&
+\cell{\sum_{i=1}^{10} y_i=160}
+&
+\cell{}
+\\
+\hline
+\cell{\sum_{i=1}^{10} x_i^2=1320}
+&
+\cell{\sum_{i=1}^{10} y_i^2=2678}
+&
+\cell{\sum_{i=1}^{10} x_i y_i=1870}
+\\
+\hline
+\end{array}
 $$
-
-（$\sum y_i,\ \sum x_i^2,\ \sum y_i^2,\ \sum x_iy_i$ 的值也在原题中给出了，待确认）
 
 1. 求线性回归方程 $\widehat y=\widehat a+\widehat b x$；
 2. 在显著性水平 $\alpha=0.05$ 下，对线性回归方程 $\widehat y=\widehat a+\widehat b x$ 进行显著性检验。
@@ -201,10 +222,3 @@ t_{0.05}(8)=1.860,\quad
 t_{0.05}(9)=1.833.
 $$
 
-补充信息，因为具体统计量不记得了，下面是一些做题中会用到的中间量：
-
-$$
-\widehat y=5.0+1.0x,\quad
-y_i-\widehat y_i:\ 4,4,2,5,4,6,\quad
-S_E=S_{yy}-\frac{S_{xy}^2}{S_{xx}}=110.
-$$
